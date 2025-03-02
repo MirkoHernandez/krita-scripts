@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Requirements: rofi, rg, krita.
+
+command=(rofi -show -dmenu -i -theme-str 'window{width:100%;}'  -fuzzy -font "hack 9" )
+file=$(rg -L --files -i  -g '*.kra' ~/data/i/images-krita/templates  | ${command[@]})
+
+# NOTE:  The template (or session, I'm not sure) workspace takes  precedence over  the workspace
+# parameter.
+if [ ! "${file}" = "" ]; then
+    if [[ "${file}" == *"animation"* ]]; then
+	krita --nosplash --workspace w-animation-pixel --template "${file}"
+    elif [[ "${file}" == *"pixel"* ]]; then
+	krita --nosplash --workspace w-pixelart --template "${file}"
+    else
+	krita --nosplash --template "${file}"
+    fi
+fi

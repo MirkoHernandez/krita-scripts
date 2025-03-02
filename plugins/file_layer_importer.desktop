@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=Krita/PythonPlugin
+X-KDE-Library=file_layer_importer
+X-Python-2-Compatible=false
+X-Krita-Manual=Manual.html
+Name=file_layer_importer
+Comment=Import a file layer using rofi.
+
+
+
