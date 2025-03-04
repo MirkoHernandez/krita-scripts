@@ -42,6 +42,10 @@ install_ui_redesign:
 install_tela:
 	$(call install_plugin,https://github.com/EyeOdin/Tela,tela)
 
+
+install_timer_watch:
+	$(call install_plugin,https://github.com/EyeOdin/timer_watch.git,timer_watch)
+
 # Drawing Tablet
 config_tablet:
 	./bash-scripts/tablet-sway-config
