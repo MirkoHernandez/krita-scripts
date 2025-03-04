@@ -9,7 +9,8 @@ A script used for opening template files using rofi.
 
 ### tablet-sway-config
 
-A script used for configuring a drawing tablet for the Sway window manager.
+A script used for configuring a drawing tablet for use with the Sway
+window manager.
 
 ## Plugins
 
@@ -26,9 +27,8 @@ Fill the current selection shrunk by a pixel.
 ### outline_selection
 
 Create selection using the select contiguous tool. Then grow it by a
-pixel and create a new layer. Useful for creating a crude outlines or
-a silhouette of the current selection.
-
+pixel and then create a new layer. Useful for creating crude outlines
+or a silhouette of the current selection.
 
 ## Makefile
 
