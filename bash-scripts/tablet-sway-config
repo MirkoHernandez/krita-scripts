@@ -41,7 +41,7 @@ tabbind_loop()
 {
     while IFS= read -r line; do
 	# Button must be the button number, adjust cut's -f parameter if necessary.
-	button=$(echo "$line" | cut -d ' ' -f 13)
+	button=$(echo "$line" | cut -d ' ' -f 14)
 	button_release=$(($button + 20));
 	button_stop=$(($button + 30));
 	pressed=$(echo "$line" | grep  "pressed")
